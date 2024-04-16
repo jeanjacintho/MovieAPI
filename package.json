@@ -1,0 +1,15 @@
+{
+  "name": "movieapi",
+  "version": "1.0.0",
+  "description": "MovieAPI is a Node.js application that allows users to register films, fill in information about them and add related tags. This application was developed to provide an easy and organized way to manage notes and tags for favorite movies.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Jean Jacintho",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
