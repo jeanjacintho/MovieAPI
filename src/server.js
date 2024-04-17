@@ -2,10 +2,12 @@ const express = require('express')
 const routes = require('./routes')
 const AppError = require('./utils/AppError')
 require('express-async-errors')
+const database = require('./database/sqlite')
 
 const app = express()
 app.use(express.json())
 app.use(routes)
+database()
 
 app.use((error, request, response, next) => {
     if(error instanceof AppError) {
